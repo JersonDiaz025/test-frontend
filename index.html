@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Mi Tienda de Libros</title>
+		<link rel="stylesheet" href="/task-1/styles.css">
+	</head>
+
+	<body>
+		<nav>
+			<!--App navigation menu-->
+			<ul>
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Catálogo</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</nav>
+		<main>
+			<!---------------------------------------------------------    TASK-1----------------------------------------->
+			<header>
+				<h1>Bienvenidos a Mi Tienda de Libros</h1>
+			</header>
+			<section class="book-container" id="all-books">
+				<!--Here you can get information about the fictional books brought from the collection.-->
+			</section>
+			<!-------------------------------------------------------------TASK-2----------------------------------------->
+			<section class="content-section-calculate">
+				<h1 class="title">Calculadora de Descuentos</h1>
+				<form class="form" onsubmit="showDiscountedPrice(); return false;">
+					<img class="icon-discount" src="/img/discount-icon.jpg" alt="discount-icon"></img>
+					<label>
+						<span for="price">Precio Original</span>
+						<input class="input" type="number" id="price" required>
+					</label>
+
+					<label>
+						<span for="discountPercentage">Porcentaje de Descuento %</span>
+						<input class="input" type="number" id="percentaje-discount" required>
+					</label>
+					<button class="submit-btn" type="submit">Calcular Descuento</button>
+				</form>
+
+				<h4 id="result-discoint" class="content-result-discount"></h4>
+
+			</section>
+
+		</main>
+		<script src="/task-1/renderBooks.js"></script>
+		<script src="/task-2/calculateDiscount.js"></script>
+	</body>
+
+</html>

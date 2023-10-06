@@ -1,0 +1,265 @@
+/* Define global variables */
+:root {
+  --primary-color: #4CAF50;    /* Primary color for the site */
+  --secondary-color: royalblue; /* Secondary color for the site */
+  --light-gray: #ccc;           /* Light gray color */
+}
+
+/* General styles for the whole document */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles for the navigation bar */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Styles for the main header */
+header h1 {
+  margin-top: 60px;
+  font-size: 25px;
+  text-align: center;
+  color: var(--secondary-color)
+}
+
+/* Additional styles for the navigation bar */
+nav {
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding-inline-start: unset !important;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Styles for the main content section */
+main {
+  padding: 20px;
+}
+
+/* Styles for the book container section */
+.book-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Styles for a book card */
+.card {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  border: 1px solid var(--light-gray);
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+/* Styles for the content cards section */
+.content-cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+/* Styles for the book title */
+.title-book {
+  text-align: left;
+  font-size: 16px;
+}
+
+/* Styles for special spans in the content */
+span {
+  color: burlywood;
+  font-weight: 600;
+}
+
+/* Styles for book descriptions */
+.description {
+  text-align: justify;
+}
+
+/* Styles for book images */
+.image-book {
+  border-radius: 8px;
+  max-width: 300px;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+}
+
+/* Styles for a book */
+.book {
+  border: 1px solid var(--light-gray);
+  padding: 20px;
+  max-width: 200px;
+  text-align: center;
+}
+
+/* Styles for book images within a book */
+.book img {
+  max-width: 100%;
+}
+
+/* Styles for headings within a book */
+.book h3 {
+  margin: 10px 0;
+}
+
+/* Styles for paragraphs within a book */
+.book p {
+  font-size: 14px;
+}
+
+/* ----------------------------------------------Task 2 - Calculate Discount Section ------------------------------------------------*/
+
+/* Styles for the discount calculation section */
+.content-section-calculate {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid var(--light-gray);
+  margin-top: 10rem;
+  position: relative;
+}
+
+/* Styles for the form within the discount calculation section */
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 450px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+/* Styles for the title within the form */
+.title {
+  font-size: 28px;
+  color: var(--secondary-color);
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.icon-discount{
+  width: 160px;
+  height: 156px;
+}
+
+/* Styles for labels within the form */
+.form label {
+  width: 100%;
+  gap: 10px;
+}
+
+/* Styles for special spans within labels */
+.form label span {
+  color: var(--primary-color);
+}
+
+/* Styles for inputs within the form */
+.form label .input {
+  width: 95%;
+  padding: 10px;
+  outline: 1px solid var(--light-gray);
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+/* Styles for the submit button within the form */
+.submit-btn {
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+}
+
+
+/* Styles for displaying the discount result */
+.content-result-discount {
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--light-gray);
+  padding: 10px;
+  position: absolute;
+  top: -30px;
+  text-align: center;
+  border-radius: 8px;
+  display: none;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 387px) {
+  header h1 {
+    margin-top: 0px;
+  }
+
+  nav {
+    padding: 10px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 10px;
+    font-size: 15px;
+    flex-direction: column;
+    display: flex;
+  }
+
+  header h1, .title {
+    font-size: 15px;
+  }
+
+  nav li {
+    margin: 0;
+  }
+
+  .form{
+    padding: 0px;
+  }
+}
