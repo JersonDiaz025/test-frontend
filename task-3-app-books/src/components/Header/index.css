@@ -1,0 +1,9 @@
+.header{
+  width: 100%;
+  display: flex;
+  position: sticky;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(181, 238, 219);
+}

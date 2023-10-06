@@ -1,17 +1,16 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 const useCart = () => {
+  // State 'cart' to store books in the cart
   const [cart, setCart] = useState([]);
 
+  // Function to add a book to the cart
   const addToCart = (book) => {
-    setCart([...cart, book]);
+    setCart([...cart, book.volumeInfo?.title]);
   };
 
-  const removeFromCart = (bookId) => {
-    setCart(cart.filter(book => book.id !== bookId));
-  };
-
-  return { cart, addToCart, removeFromCart };
+  // Return the current state of the cart and functions to add and remove books
+  return { cart, addToCart };
 };
 
 export default useCart;

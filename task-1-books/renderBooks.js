@@ -5,7 +5,7 @@
 // Array containing the entire collection of books
 const books = [
   {
-    image: "img/book1.png",
+    image: "/img/book1.png",
     title: "Un papá para Emma",
     description:
       "Lara Hernández, perdió la virginidad en su fiesta de cumpleaños. Su novio la chantajeó y la vendió a un poderoso cliente. De aquella noche nació su pequeña hija, Emma. La joven madre sin recursos, se esforzaba cada día , por darle todo a su bebé.",
